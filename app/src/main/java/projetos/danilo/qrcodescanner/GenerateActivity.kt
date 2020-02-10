@@ -24,7 +24,7 @@ class GenerateActivity : AppCompatActivity() {
     private fun gerarQRCode(){
         val txt: String = editText.text.toString()
         val multiFormatWriter = MultiFormatWriter()
-        lateinit var barcodeEncoder: BarcodeEncoder
+        val barcodeEncoder = BarcodeEncoder()
 
         try {
             val bitMatrix: BitMatrix =

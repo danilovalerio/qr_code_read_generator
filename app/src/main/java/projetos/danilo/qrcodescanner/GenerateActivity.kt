@@ -23,12 +23,12 @@ class GenerateActivity : AppCompatActivity() {
 
     private fun gerarQRCode(){
         val txt: String = editText.text.toString()
-        var multiFormatWriter: MultiFormatWriter? = null
+        val multiFormatWriter = MultiFormatWriter()
         lateinit var barcodeEncoder: BarcodeEncoder
 
         try {
             val bitMatrix: BitMatrix =
-                multiFormatWriter!!.encode(txt, BarcodeFormat.QR_CODE,400, 400)
+                multiFormatWriter.encode(txt, BarcodeFormat.QR_CODE,400, 400)
             val bitmap = barcodeEncoder.createBitmap(bitMatrix)
             ivQRCode.setImageBitmap(bitmap)
         } catch (e: WriterException){

@@ -11,4 +11,5 @@
     <string name="open_url">Abrir URL</string>
     <string name="open_email">Abrir EMAIL</string>
     <string name="open_call">Abrir Discador</string>
+    <string name="nothing_read">Sem leitura</string>
 </resources>

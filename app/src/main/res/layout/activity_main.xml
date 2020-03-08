@@ -46,7 +46,7 @@
             android:src="@drawable/ic_fullscreen"/>
 
         <ImageButton
-            android:id="@+id/flash_light"
+            android:id="@+id/ib_flash_light"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
@@ -60,7 +60,7 @@
 
 
         <ImageButton
-            android:id="@+id/imgb_lock"
+            android:id="@+id/ib_lock"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"

@@ -10,7 +10,9 @@ class Database {
         val KEY_NAME = "text"
         val KEY_BARCODE_NAME = "barcode_name"
 
-        fun saveResult(context: Context, result: com.google.zxing.Result) {
+        val KEY_IS_LIGHTENED = "is_lightened"
+
+        fun saveResult(context: Context, result: com.google.zxing.Result? = null) {
             val sp = context
                 .getSharedPreferences(SP_NAME, Context.MODE_PRIVATE)
             val contents = result?.text

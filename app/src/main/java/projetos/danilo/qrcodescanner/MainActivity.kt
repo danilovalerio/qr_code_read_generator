@@ -13,13 +13,16 @@ import com.google.zxing.integration.android.IntentIntegrator
 import com.google.zxing.integration.android.IntentResult
 import kotlinx.android.synthetic.main.activity_generator_qr_code.*
 import kotlinx.android.synthetic.main.activity_main.*
+import me.dm7.barcodescanner.zxing.ZXingScannerView
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), ZXingScannerView.ResultHandler{
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        askCameraPermission()
 
         // Here, thisActivity is the current activity
         if (ContextCompat.checkSelfPermission(this,

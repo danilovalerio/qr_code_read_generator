@@ -14,7 +14,7 @@ class GenerateActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_generator_qr_code)
+        setContentView(R.layout.activity_generate)
 
         btnGenerate.setOnClickListener {
             gerarQRCode()
@@ -31,7 +31,7 @@ class GenerateActivity : AppCompatActivity() {
                 multiFormatWriter.encode(txt, BarcodeFormat.QR_CODE,400, 400)
             val bitmap = barcodeEncoder.createBitmap(bitMatrix)
             ivQRCode.setImageBitmap(bitmap)
-        } catch (e: WriterException){
+        } catch (e: WriterException) {
             e.printStackTrace()
         }
 
@@ -41,4 +41,5 @@ class GenerateActivity : AppCompatActivity() {
     private fun inicializarComponentes(){
 
     }
+
 }

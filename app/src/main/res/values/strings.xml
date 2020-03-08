@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">QR Code Scanner</string>
+    <string name="app_name">ScanQrCode</string>
+    <string name="fullscreen_mode">fullscreen_mode</string>
+    <string name="lock_code_reader">Trava leitor</string>
+    <string name="info">Info</string>
+    <string name="info_description">Info description</string>
+    <string name="last_content_read">Último conteído lido</string>
+    <string name="remover_ultima_captura">Remover captura realizada</string>
 </resources>

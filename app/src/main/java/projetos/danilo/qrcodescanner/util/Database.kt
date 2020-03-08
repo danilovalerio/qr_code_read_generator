@@ -22,7 +22,7 @@ class Database {
                 .apply()
         }
 
-        fun getSavedResult(context: Context): com.google.zxing.Result {
+        fun getSavedResult(context: Context): Result? {
             val sp = context.getSharedPreferences(SP_NAME, Context.MODE_PRIVATE)
             val text = sp.getString(KEY_NAME, null)
 
@@ -30,14 +30,13 @@ class Database {
                 return null
             }
 
-            val barcodeFormat = BarcodeFormat.valueOf(sp.getString.(KEY_BARCODE_NAME, null))
+            val barcodeFormat = BarcodeFormat.valueOf(sp.getString(KEY_BARCODE_NAME, null)!!)
             val result = Result(
                 text,
                 text.toByteArray(),
                 arrayOf(),
                 barcodeFormat
             )
-
 
             return result
         }

@@ -6,4 +6,9 @@
     <string name="info_description">Info description</string>
     <string name="last_content_read">Último conteído lido</string>
     <string name="remover_ultima_captura">Remover captura realizada</string>
+    <string name="barcode_format">Barcode Formato</string>
+    <string name="unrecognized_code">Urecognize_code</string>
+    <string name="open_url">Abrir URL</string>
+    <string name="open_email">Abrir EMAIL</string>
+    <string name="open_call">Abrir Discador</string>
 </resources>
